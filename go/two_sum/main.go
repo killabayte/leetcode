@@ -1,3 +1,4 @@
+//brute force way, requires optimization
 package main
 
 func main(nums []int, target int) []int {
