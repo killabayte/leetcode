@@ -6,6 +6,8 @@ A defanged IP address replaces every period "." with "[.]".
 
 package main
 
+import "strings"
+
 func main(address string) string {
-    return strings.Replace(address, ".", "[.]", -1)
+	return strings.Replace(address, ".", "[.]", -1)
 }
