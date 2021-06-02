@@ -5,3 +5,7 @@ A defanged IP address replaces every period "." with "[.]".
 */
 
 package main
+
+func main(address string) string {
+    return strings.Replace(address, ".", "[.]", -1)
+}
