@@ -10,3 +10,16 @@ Explanation: Since x1=2, x2=5, x3=1, y1=3, y2=4, y3=7 then the answer is [2,3,5,
 */
 
 package main
+
+func main(nums []int, n int) []int {
+    var shuffledSlice []int
+    
+    xSlice := nums[:n]
+    ySlice := nums[n:]
+
+    for i:=0; i<n; i++ {
+        shuffledSlice = append(shuffledSlice, xSlice[i], ySlice[i])
+    }
+    
+    return shuffledSlice
+}
