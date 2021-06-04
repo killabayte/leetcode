@@ -13,3 +13,22 @@ Both customers are considered the richest with a wealth of 6 each, so return 6.
 */
 
 package main
+
+func main(accounts [][]int) int {
+	var maxWealth int
+
+	for i := range accounts {
+		var currentWealth int
+
+		for _, jv := range accounts[i] {
+			currentWealth += jv
+		}
+		if currentWealth == maxWealth {
+			continue
+		} else if currentWealth > maxWealth {
+			maxWealth = currentWealth
+		}
+	}
+
+	return maxWealth
+}
