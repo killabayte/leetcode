@@ -28,3 +28,53 @@ We return false because 0 + 0 != 1.
 */
 
 package main
+
+import (
+	"fmt"
+	"strconv"
+)
+
+func main(firstWord string, secondWord string, targetWord string) bool {
+	var firstWordSum int
+	var secondWordSum int
+	var targetWordSum int
+
+	firstWordSum = wordSumMain(firstWord)
+	secondWordSum = wordSumMain(secondWord)
+	targetWordSum = wordSumMain(targetWord)
+	fmt.Println(firstWordSum)
+	fmt.Println(secondWordSum)
+	fmt.Println(targetWordSum)
+
+	return (firstWordSum+secondWordSum == targetWordSum)
+}
+
+func wordSumMain(word string) int {
+	var wordSum string
+
+	for _, v := range word {
+		if string(v) == "a" {
+			wordSum += string("0")
+		} else if string(v) == "b" {
+			wordSum += string("1")
+		} else if string(v) == "c" {
+			wordSum += string("2")
+		} else if string(v) == "d" {
+			wordSum += string("3")
+		} else if string(v) == "e" {
+			wordSum += string("4")
+		} else if string(v) == "f" {
+			wordSum += string("5")
+		} else if string(v) == "g" {
+			wordSum += string("6")
+		} else if string(v) == "h" {
+			wordSum += string("7")
+		} else if string(v) == "i" {
+			wordSum += string("8")
+		} else if string(v) == "j" {
+			wordSum += string("9")
+		}
+	}
+	wordSumResult, _ := strconv.Atoi(wordSum)
+	return wordSumResult
+}
