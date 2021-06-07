@@ -15,3 +15,28 @@ Kid 5 has 3 candies and if he or she receives at least 2 extra candies will have
 */
 
 package main
+
+func main(candies []int, extraCandies int) []bool {
+	var greatestNumber int
+	var resultSlice []bool
+
+	for i, v := range candies {
+		if i == 0 {
+			greatestNumber = v
+		} else {
+			if v > greatestNumber {
+				greatestNumber = v
+			}
+		}
+	}
+
+	for _, v := range candies {
+		if (v + extraCandies) >= greatestNumber {
+			resultSlice = append(resultSlice, true)
+		} else {
+			resultSlice = append(resultSlice, false)
+		}
+	}
+
+	return resultSlice
+}
