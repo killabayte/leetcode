@@ -19,3 +19,18 @@ Output: [2,1,0,3]
 */
 
 package main
+
+func main(nums []int) []int {
+	var resultSlice []int
+
+	for _, iv := range nums {
+		counter := 0
+		for _, jv := range nums {
+			if iv > jv {
+				counter += 1
+			}
+		}
+		resultSlice = append(resultSlice, counter)
+	}
+	return resultSlice
+}
