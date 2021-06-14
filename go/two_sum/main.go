@@ -1,4 +1,6 @@
 //brute force way, requires optimization
+//easy mode
+
 package main
 
 func main(nums []int, target int) []int {
