@@ -20,3 +20,28 @@ Constraints:
 */
 
 package main
+
+import (
+    "fmt"
+    "sort"
+)
+
+func main(strs []string) string {
+    var result string
+
+    if len(strs) < 0 {
+        return ""
+    } else if len(strs) == 1 {
+        return (string(strs[0]))
+    } else {
+        sort.Strings(strs)
+        for i := range strs[0] {
+            if strs[0][i] == strs[len(strs)-1][i] {
+                result += string(strs[0][i])
+            } else {
+                break
+            }
+        }
+    }
+    return result
+}
