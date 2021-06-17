@@ -25,6 +25,7 @@ The numerical value of firstWord is "aaa" -> "000" -> 0.
 The numerical value of secondWord is "a" -> "0" -> 0.
 The numerical value of targetWord is "aab" -> "001" -> 1.
 We return false because 0 + 0 != 1.
+
 */
 
 package main
