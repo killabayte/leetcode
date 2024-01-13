@@ -10,3 +10,9 @@ func removeElement(nums []int, val int) int {
 	}
 	return i
 }
+
+func main() {
+	nums := []int{3, 2, 2, 3}
+	val := 3
+	removeElement(nums, val)
+}
