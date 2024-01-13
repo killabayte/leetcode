@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 func removeElement(nums []int, val int) int {
 	i := 0
 	for j, num := range nums {
@@ -14,5 +16,5 @@ func removeElement(nums []int, val int) int {
 func main() {
 	nums := []int{3, 2, 2, 3}
 	val := 3
-	removeElement(nums, val)
+	fmt.Println(removeElement(nums, val))
 }
