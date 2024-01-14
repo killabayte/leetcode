@@ -13,6 +13,8 @@ func removeDuplicates(nums []int) int {
 			nums[uniqueIndex] = nums[i]
 		}
 	}
+
+	return uniqueIndex + 1
 }
 
 func main() {
