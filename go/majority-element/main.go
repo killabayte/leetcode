@@ -3,30 +3,17 @@ package main
 import "fmt"
 
 func majorityElement(nums []int) int {
-	candidate := nums[0]
-	count := 1
+	majorityCount := len(nums) / 2
 
-	for i := 1; i < len(nums); i++ {
-		if count == 0 {
-			candidate = nums[i]
-		}
+	recorded := make(map[int]int)
 
-		if nums[i] == candidate {
-			count++
-		} else {
-			count--
-		}
-	}
-
-	count = 0
 	for i := 0; i < len(nums); i++ {
-		if nums[i] == candidate {
-			count++
-		}
-	}
+		num := nums[i]
+		recorded[num]++
 
-	if count > len(nums)/2 {
-		return candidate
+		if count := recorded[num]; count > majorityCount {
+			return num
+		}
 	}
 
 	return -1
