@@ -13,5 +13,5 @@ func removeDuplicates(nums []int) int {
 			uniqueIndex++
 		}
 	}
-
+	return uniqueIndex
 }
