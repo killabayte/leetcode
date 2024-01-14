@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 func removeDuplicates(nums []int) int {
 	if len(nums) == 0 {
 		return 0
@@ -11,4 +13,12 @@ func removeDuplicates(nums []int) int {
 			nums[uniqueIndex] = nums[i]
 		}
 	}
+}
+
+func main() {
+	nums := []int{1, 1, 2, 2, 3, 4, 4, 5}
+	result := removeDuplicates(nums)
+
+	fmt.Printf("Unique elements: %d\n", result)
+	fmt.Println("Unique array:", nums[:result])
 }
