@@ -19,7 +19,7 @@ func removeDuplicates(nums []int) int {
 }
 
 func main() {
-	nums := []int{1, 1, 1, 2, 2, 3}
+	nums := []int{0, 0, 1, 1, 1, 1, 2, 3, 3}
 	result := removeDuplicates(nums)
 
 	fmt.Printf("Unique elements: %d\n", result)
