@@ -1,7 +1,10 @@
 package main
 
 func rotate(nums []int, k int) {
-
+	rotated_nums := make([]int, len(nums))
+	for i := 0; i < len(nums); i++ {
+		rotated_nums[(i+k)%len(nums)] = nums[i]
+	}
 }
 
 func main() {
