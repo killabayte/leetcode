@@ -1,14 +1,27 @@
 package main
 
-import "fmt"
-
 func rotate(nums []int, k int) {
-	rotated_nums := make([]int, len(nums))
-	for i := 0; i < len(nums); i++ {
-		rotated_nums[(i+k)%len(nums)] = nums[i]
+	n := len(nums)
+
+	// Handle cases where k is greater than the array length
+	k %= n
+
+	// Reverse the entire array
+	reverse(nums, 0, n-1)
+
+	// Reverse the first k elements
+	reverse(nums, 0, k-1)
+
+	// Reverse the remaining elements
+	reverse(nums, k, n-1)
+}
+
+func reverse(nums []int, start, end int) {
+	for start < end {
+		nums[start], nums[end] = nums[end], nums[start]
+		start++
+		end--
 	}
-	nums = rotated_nums
-	fmt.Println(nums)
 }
 
 func main() {
