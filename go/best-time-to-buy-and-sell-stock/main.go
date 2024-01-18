@@ -1,5 +1,6 @@
 package main
 
 func maxProfit(prices []int) int {
-	//TBD
+	min_price := 0
+	max_profit := 0
 }
