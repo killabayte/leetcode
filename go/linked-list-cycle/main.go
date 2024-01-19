@@ -15,4 +15,6 @@ func hashCycle(head *ListNode) bool {
 			return true
 		}
 	}
+
+	return false
 }
