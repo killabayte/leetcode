@@ -22,6 +22,7 @@ func hasCycle(head *ListNode) bool {
 }
 
 func main() {
+
 	list1 := &ListNode{Val: 1}
 	list1.Next = &ListNode{Val: 2}
 	list1.Next.Next = &ListNode{Val: 3}
