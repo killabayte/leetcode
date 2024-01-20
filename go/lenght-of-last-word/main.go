@@ -1,6 +1,8 @@
 package main
 
+import "strings"
+
 func getLastWordLength(s string) int {
-	// TODO - Add your code here
-	return 0
+	words := strings.Fields(s)
+
 }
