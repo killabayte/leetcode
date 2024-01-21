@@ -21,7 +21,6 @@ func canConstruct(ransomNote string, magazine string) bool {
 }
 
 func main() {
-	// Example 1
 	ransomNote1, magazine1 := "a", "b"
 	fmt.Println(canConstruct(ransomNote1, magazine1)) // Output: false
 
