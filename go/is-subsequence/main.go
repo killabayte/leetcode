@@ -21,5 +21,5 @@ func main() {
 	fmt.Println(isSubsequence(s1, t1))
 
 	s2, t2 := "axc", "ahbgdc"
-	fmt.Println(isSubsequence(s2, t2)) // Output: false
+	fmt.Println(isSubsequence(s2, t2))
 }
