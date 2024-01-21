@@ -27,7 +27,6 @@ func main() {
 	ransomNote2, magazine2 := "aa", "ab"
 	fmt.Println(canConstruct(ransomNote2, magazine2))
 
-	// Example 3
 	ransomNote3, magazine3 := "aa", "aab"
 	fmt.Println(canConstruct(ransomNote3, magazine3)) // Output: true
 }
