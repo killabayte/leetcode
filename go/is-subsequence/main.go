@@ -18,7 +18,7 @@ func isSubsequence(s string, t string) bool {
 
 func main() {
 	s1, t1 := "abc", "ahbgdc"
-	fmt.Println(isSubsequence(s1, t1)) // Output: true
+	fmt.Println(isSubsequence(s1, t1))
 
 	s2, t2 := "axc", "ahbgdc"
 	fmt.Println(isSubsequence(s2, t2)) // Output: false
