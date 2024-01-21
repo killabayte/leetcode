@@ -20,7 +20,6 @@ func main() {
 	s1, t1 := "abc", "ahbgdc"
 	fmt.Println(isSubsequence(s1, t1)) // Output: true
 
-	// Example 2
 	s2, t2 := "axc", "ahbgdc"
 	fmt.Println(isSubsequence(s2, t2)) // Output: false
 }
