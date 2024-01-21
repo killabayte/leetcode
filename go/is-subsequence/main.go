@@ -17,7 +17,6 @@ func isSubsequence(s string, t string) bool {
 }
 
 func main() {
-	// Example 1
 	s1, t1 := "abc", "ahbgdc"
 	fmt.Println(isSubsequence(s1, t1)) // Output: true
 
