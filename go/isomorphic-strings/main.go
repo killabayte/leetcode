@@ -31,7 +31,7 @@ func isIsomorphic(s string, t string) bool {
 
 func main() {
 	s1, t1 := "egg", "add"
-	fmt.Println(isIsomorphic(s1, t1)) // Вывод: true
+	fmt.Println(isIsomorphic(s1, t1))
 
 	s2, t2 := "foo", "bar"
 	fmt.Println(isIsomorphic(s2, t2)) // Вывод: false
