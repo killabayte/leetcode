@@ -34,5 +34,5 @@ func main() {
 	fmt.Println(isIsomorphic(s1, t1))
 
 	s2, t2 := "foo", "bar"
-	fmt.Println(isIsomorphic(s2, t2)) // Вывод: false
+	fmt.Println(isIsomorphic(s2, t2))
 }
