@@ -5,8 +5,8 @@ func subarraySum(nums []int, k int) int {
 	sum := 0
 	prefixSumCount := map[int]int{0: 1}
 
-	for _, i := range nums {
-		sum += nums[i]
+	for _, num := range nums {
+		sum += num
 		toRemove := sum - k
 		answer += prefixSumCount[toRemove]
 		prevCount := prefixSumCount[sum]
@@ -16,5 +16,7 @@ func subarraySum(nums []int, k int) int {
 }
 
 func main() {
-	subarraySum([]int{1, 1, 1}, 2)
+	exampleOne := subarraySum([]int{1, 1, 1}, 2)
+	println(exampleOne)
+
 }
