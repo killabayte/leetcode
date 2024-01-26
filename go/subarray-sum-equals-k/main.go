@@ -8,5 +8,8 @@ func subarraySum(nums []int, k int) int {
 	for _, i := range nums {
 		sum += nums[i]
 		toRemove := sum - k
+		answer += prefixSumCount[toRemove]
+		prevCount := prefixSumCount[sum]
+		prefixSumCount[sum] = prevCount + 1
 	}
 }
