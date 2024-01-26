@@ -12,4 +12,5 @@ func subarraySum(nums []int, k int) int {
 		prevCount := prefixSumCount[sum]
 		prefixSumCount[sum] = prevCount + 1
 	}
+	return answer
 }
