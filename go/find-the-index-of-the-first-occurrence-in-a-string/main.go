@@ -23,3 +23,8 @@ func strStr(haystack string, needle string) int {
 		return needleFirstChar
 	}
 }
+
+func main() {
+	println(strStr("sadbutsad", "sad"))
+	println(strStr("leetcode", "leeto"))
+}
