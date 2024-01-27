@@ -12,7 +12,6 @@ func strStr(haystack string, needle string) int {
 		for j, char2 := range needle {
 			if char2 == char {
 				neeedleLen--
-				needleFirstChar = j
 			}
 		}
 	}
