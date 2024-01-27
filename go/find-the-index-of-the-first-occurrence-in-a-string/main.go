@@ -19,7 +19,7 @@ func strStr(haystack string, needle string) int {
 	if neeedleLen > 0 {
 		return -1
 	} else {
-		return needleFirstChar
+		return neeedleLen
 	}
 }
 
