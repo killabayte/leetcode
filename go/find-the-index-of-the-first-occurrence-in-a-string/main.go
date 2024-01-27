@@ -6,21 +6,20 @@ func strStr(haystack string, needle string) int {
 	}
 
 	var neeedleLen int = len(needle)
+	var needleFirstChar int
 
-	for i, char := range haystack {
+	for _, char := range haystack {
 		for j, char2 := range needle {
 			if char2 == char {
-				if j == neeedleLen-1 {
-					return i - j
-				}
-				continue
-			} else {
-				break
+				neeedleLen--
+				needleFirstChar = j
 			}
 		}
 	}
 
 	if neeedleLen > 0 {
 		return -1
+	} else {
+		return needleFirstChar
 	}
 }
