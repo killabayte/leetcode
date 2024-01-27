@@ -5,7 +5,6 @@ func strStr(haystack string, needle string) int {
 		return 0
 	}
 
-	// Проход по строке (хейстеку) с использованием окна размером len(needle)
 	for i := 0; i <= len(haystack)-len(needle); i++ {
 		// Проверка совпадения подстроки (иглы) с текущим окном
 		if haystack[i:i+len(needle)] == needle {
