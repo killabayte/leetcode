@@ -10,7 +10,7 @@ func strStr(haystack string, needle string) int {
 		}
 	}
 
-	return -1 // Игла не найдена в хейстеке
+	return -1
 }
 
 func main() {
