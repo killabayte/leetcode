@@ -9,7 +9,7 @@ func strStr(haystack string, needle string) int {
 	var needleFirstChar int
 
 	for _, char := range haystack {
-		for j, char2 := range needle {
+		for _, char2 := range needle {
 			if char2 == char {
 				neeedleLen--
 			}
