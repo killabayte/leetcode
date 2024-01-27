@@ -1,7 +1,6 @@
 package main
 
 func strStr(haystack string, needle string) int {
-	// Если игла (needle) пуста, вернуть 0
 	if needle == "" {
 		return 0
 	}
