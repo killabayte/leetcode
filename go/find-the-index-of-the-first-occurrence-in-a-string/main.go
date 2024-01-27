@@ -13,7 +13,6 @@ func strStr(haystack string, needle string) int {
 			if char2 == char {
 				neeedleLen--
 				needleFirstChar = j
-				break
 			}
 		}
 	}
