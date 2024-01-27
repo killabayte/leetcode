@@ -17,4 +17,5 @@ func strStr(haystack string, needle string) int {
 func main() {
 	println(strStr("sadbutsad", "sad"))
 	println(strStr("leetcode", "leeto"))
+	println(strStr("hello", "ll"))
 }
