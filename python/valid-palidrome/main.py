@@ -18,3 +18,4 @@ def isAlphaNumeric(c: str) -> bool:
 
 print(isPalindrome("A man, a plan, a canal: Panama"))
 print(isPalindrome("race a car"))
+print(isPalindrome(" "))
