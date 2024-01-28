@@ -15,6 +15,10 @@ func wordPattern(pattern string, s string) bool {
 	charToWord := make(map[byte]string)
 	wordToChar := make(map[string]byte)
 
+	for i := 0; i < len(pattern); i++ {
+		char := pattern[i]
+		word := words[i]
+
 }
 
 func main() {
