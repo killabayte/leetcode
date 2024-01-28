@@ -19,5 +19,8 @@ def merge(nums1: List[int], m: int, nums2: List[int], n: int) -> None:
         nums1[indexMerge] = nums2[index2]
         index2 -= 1
         indexMerge -= 1
+    print("Merged list: ", nums1)
+
+
 
 merge([1,2,3,0,0,0], 3, [2,5,6], 3)
