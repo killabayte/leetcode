@@ -1,11 +1,13 @@
-def canConstruct(self, ransomNote: str, magazine: str) -> bool:
+def canConstruct(ransomNote: str, magazine: str) -> bool:
     letterCount = {}
 
-    for char in magazine:
-        letterCount[char] += 1
+    for c in magazine:
+        letterCount[c] = letterCount.get(c, 0) + 1
 
-    for char in ransomNote:
-        letterCount[char] -= 1
-        if letterCount[char] < 0:
+    for c in ransomNote:
+        letterCount[c] = letterCount.get(c, 0) - 1
+        if letterCount[c] < 0:
             return False
     return True
+
+print(canConstruct("aabb", "aabbc"))
