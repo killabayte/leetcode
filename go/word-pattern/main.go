@@ -2,9 +2,12 @@ package main
 
 import (
 	"fmt"
+	"strings"
 )
 
 func wordPattern(pattern string, s string) bool {
+	words := strings.Split(s, " ")
+
 	if len(pattern) == 0 || len(s) == 0 {
 		return false
 	}
