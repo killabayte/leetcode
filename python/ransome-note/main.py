@@ -8,3 +8,4 @@ def canConstruct(self, ransomNote: str, magazine: str) -> bool:
         letterCount[char] -= 1
         if letterCount[char] < 0:
             return False
+    return True
