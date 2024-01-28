@@ -8,7 +8,7 @@ import (
 func wordPattern(pattern string, s string) bool {
 	words := strings.Split(s, " ")
 
-	if len(pattern) != len(s) {
+	if len(pattern) != len(words) {
 		return false
 	}
 
