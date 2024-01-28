@@ -19,6 +19,17 @@ func wordPattern(pattern string, s string) bool {
 		char := pattern[i]
 		word := words[i]
 
+		if prevWord, exists := charToWord[char]; exists && prevWord != word {
+			return false
+		}
+		if prevChar, exists := wordToChar[word]; exists && prevChar != char {
+			return false
+		}
+
+		charToWord[char] = word
+		wordToChar[word] = char
+	}
+	return true
 }
 
 func main() {
