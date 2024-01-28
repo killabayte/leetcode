@@ -33,6 +33,8 @@ func wordPattern(pattern string, s string) bool {
 }
 
 func main() {
-	fmt.Println(wordPattern("abba", "dog cat cat dog"))
-	fmt.Println(wordPattern("abba", "dog cat cat fish"))
+	pattern := "abba"
+	s := "dog cat cat dog"
+	result := wordPattern(pattern, s)
+	fmt.Println(result)
 }
