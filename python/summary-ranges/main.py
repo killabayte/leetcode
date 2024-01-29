@@ -8,7 +8,7 @@ def summaryRanges(nums: List[int]) -> List[str]:
         start = nums[i]
         end = start
 
-        while i+1 < len(nums) and nums[i+1] == nums[i]+1:
+        while i+1 < len(nums)-1 and nums[i+1] == nums[i]+1:
             end = nums[i+1]
             i += 1
 
