@@ -3,6 +3,7 @@ from typing import List
 
 def summaryRanges(nums: List[int]) -> List[str]:
     result = []
+    i = 0
 
     while i < len(nums):
         start = nums[i]
