@@ -4,7 +4,7 @@ from typing import List
 def summaryRanges(nums: List[int]) -> List[str]:
     result = []
 
-    while i in len(nums):
+    while i < len(nums):
         start = nums[i]
         end = start
 
