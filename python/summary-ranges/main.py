@@ -1,3 +1,6 @@
+from typing import List
+
+
 def summaryRanges(nums: List[int]) -> List[str]:
     result = []
 
