@@ -17,6 +17,8 @@ def summaryRanges(nums: List[int]) -> List[str]:
             result.append(str(start))
         else:
             result.append(str(start) + "->" + str(end))
+        
+        i+=1
 
     return result
 
